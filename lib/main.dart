@@ -72,9 +72,9 @@ class CustomSearchDelegate extends SearchDelegate {
   @override
   Widget buildResults(BuildContext context) {
     List<String> matchQuery = [];
-    for (var fruit in searchTerms) {
-      if (fruit.toLowerCase().contains(query.toLowerCase())) {
-        matchQuery.add(fruit);
+    for (var language in searchTerms) {
+      if (language.toLowerCase().contains(query.toLowerCase())) {
+        matchQuery.add(language);
       }
     }
     return ListView.builder(
@@ -91,9 +91,9 @@ class CustomSearchDelegate extends SearchDelegate {
   @override
   Widget buildSuggestions(BuildContext context) {
     List<String> matchQuery = [];
-    for (var fruit in searchTerms) {
-      if (fruit.toLowerCase().contains(query.toLowerCase())) {
-        matchQuery.add(fruit);
+    for (var language in searchTerms) {
+      if (language.toLowerCase().contains(query.toLowerCase())) {
+        matchQuery.add(language);
       }
     }
     return ListView.builder(
